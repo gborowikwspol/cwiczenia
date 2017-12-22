@@ -9,7 +9,7 @@ int main(){
 
 	printf("Wynik: ");
 
-/*/	do{
+/**/	do{
               printf("%d ", liczba % 2);
               liczba /= 2;
 	}while(liczba > 0);
@@ -26,6 +26,5 @@ int main(){
 	}
 	printf("\n");
 /**/
-
 	return 0;
 }
