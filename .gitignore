@@ -1,0 +1,18 @@
+# ignoruj wszystkie pliki wynikowe kompilacji
+
+*.o
+*.out
+
+# ignoruj pliki tymczasowe
+*.c~
+
+# ignoruj pliki tymczasowe idea
+.idea
+cmake-build-debug/
+
+# inne
+*.save
+
+# macOS
+.DS_Store
+
