@@ -40,7 +40,7 @@ char znalezienie_cyfry_o_maksymalnej_wartosci(const int liczba_znakow,
                 }
             }
         }
-        printf("\nMaksymalna cyfra %c", maksymalna_cyfra);
+        printf("\nMaksymalna cyfra: %c", maksymalna_cyfra);
     } else {
         printf("\nW tablicy nie ma cyfr.");
     }
