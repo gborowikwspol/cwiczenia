@@ -1,7 +1,9 @@
-cmake_minimum_required(VERSION 3.9)
+cmake_minimum_required(VERSION 3.6)
 project(06_schemat_Hornera)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(06_schemat_Hornera
+set(SOURCE_FILES
         main.c)
+
+add_executable(06_schemat_Hornera ${SOURCE_FILES})
