@@ -4,9 +4,10 @@
 
 double schemat_klasyczny(int liczba_slow,
                          char *const *tablica_slow) {
+
+    double x = atof(tablica_slow[1]);
     double wynik = 0.0;
     double potega_x = 1.0;
-    double x = atof(tablica_slow[1]);
 
     for (int licznik = 2; licznik < liczba_slow; ++licznik) {
         wynik += potega_x * atof(tablica_slow[licznik]);
@@ -17,11 +18,12 @@ double schemat_klasyczny(int liczba_slow,
 
 double schemat_Hornera(int liczba_slow,
                          char *const *tablica_slow) {
-    double wynik = 0.0;
-    double x = atof(tablica_slow[1]);
 
-    for (int licznik = liczba_slow - 1; licznik >= 2; --licznik) {
-        wynik = tablica_slow[licznik] * x +
+    double x = atof(tablica_slow[1]);
+    double wynik = atof(tablica_slow[liczba_slow - 1]); // współczynnik a_n
+
+    for (int licznik = liczba_slow - 2; licznik >= 2; --licznik) {
+        wynik = wynik * x + atof(tablica_slow[licznik]);
     }
 
     return wynik;
@@ -33,7 +35,7 @@ int main(int liczba_slow, char *tablica_slow[]) {
         printf("Wynik: %lf\n",
                schemat_Hornera(liczba_slow, tablica_slow));
     } else {
-        printf("Nie poprawna liczba parametrow!\n");
+        printf("Niepoprawna liczba parametrow!\n");
     }
 
     return 0;
