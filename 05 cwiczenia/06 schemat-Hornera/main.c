@@ -29,11 +29,25 @@ double schemat_Hornera(int liczba_slow,
     return wynik;
 }
 
+double schemat_Hornera_rek(int liczba_slow,
+                         char *const *tablica_slow) {
+
+	if(liczba_slow == 2){
+		return atof(tablica_slow[2]);
+	}else{
+		return
+		schemat_Hornera_rek(
+		liczba_slow - 1,
+		tablica_slow) * atof(tablica_slow[1])
+		+ atof(tablica_slow[liczba_slow - 1]);
+	}
+}
+
 int main(int liczba_slow, char *tablica_slow[]) {
 
     if (liczba_slow > 2) { //pierwszy parametr to nazwa programu
         printf("Wynik: %lf\n",
-               schemat_Hornera(liczba_slow, tablica_slow));
+               schemat_Hornera_rek(liczba_slow, tablica_slow));
     } else {
         printf("Niepoprawna liczba parametrow!\n");
     }
