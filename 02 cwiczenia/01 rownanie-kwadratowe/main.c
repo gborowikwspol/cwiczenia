@@ -54,7 +54,7 @@ double oblicz_delta(double a, double b, double c) {
 }
 
 void instnieje_jedno_rozwiazanie(double a, double b) {
-    printf("Δ = 0 mamy tlko jedno rozwiazanie tego rownania \nx0 = -b/(2*a) \n");
+    printf("Δ = 0 mamy tylko jedno rozwiazanie tego rownania \nx0 = -b/(2*a) \n");
     printf("x0 = %lf\n", (-b) / (2 * a));
 }
 
@@ -79,7 +79,7 @@ void wczytaj_parametry_funkcji(double *a, double *b, double *c) {
 void wyswietl_informacje() {
     puts("************************************************************************");
     puts("************************************************************************");
-    puts("****Witam, zapraszam do wspólnego rozwiazywania równań kwadratowych*****");
+    puts("****Witam, zapraszam do wspólnego rozwiązywania równań kwadratowych*****");
     puts("****************y = ax² + bx +c*****************************************");
     puts("************************************************************************");
 }
