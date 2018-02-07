@@ -18,8 +18,7 @@
 3. Rozbudować '04 krotnosc-malych-liter' o duże litery
 4. Rozwiniecie sin(x) w szereg Taylora - program w C
 5. Sortowanie (bubble sort, insertion sort, selection sort) - różnice - krótka notatka w MarkDown na GitHub
-6. Sortowanie z wykorzystaniem opracowanej funkcji 'max' - program w C
-
+6. Sortowanie z wykorzystaniem funkcji 'max' - program w C
 
 25-26 styczeń 2018
 1. Największy wspólny dzielnik (Algorytm Euklidesa) - iteracyjnie - program w C (patrz grudzień pkt 2.)
