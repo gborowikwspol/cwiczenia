@@ -29,25 +29,39 @@ double schemat_Hornera(int liczba_slow,
     return wynik;
 }
 
-double schemat_Hornera_rek(int liczba_slow,
+//współczynniki wielomianu podawane na wejście wg malejących indeksów
+double schemat_Hornera_rek1(int liczba_slow,
                          char *const *tablica_slow) {
 
-	if(liczba_slow == 2){
+	if(liczba_slow == 3){
 		return atof(tablica_slow[2]);
 	}else{
 		return
-		schemat_Hornera_rek(
+		schemat_Hornera_rek1(
 		liczba_slow - 1,
 		tablica_slow) * atof(tablica_slow[1])
 		+ atof(tablica_slow[liczba_slow - 1]);
 	}
 }
 
+//współczynniki wielomianu podawane na wejście wg rosnących indeksów
+double schemat_Hornera_rek2(int liczba_slow, int indeks,
+                           char *const *tablica_slow) {
+
+    if (indeks == 3) {
+        return atof(tablica_slow[liczba_slow - 1]);
+    } else {
+        return schemat_Hornera_rek2(liczba_slow, indeks - 1, tablica_slow)
+               * atof(tablica_slow[1])
+               + atof(tablica_slow[liczba_slow - indeks + 2]);
+    }
+}
+
 int main(int liczba_slow, char *tablica_slow[]) {
 
     if (liczba_slow > 2) { //pierwszy parametr to nazwa programu
         printf("Wynik: %lf\n",
-               schemat_Hornera_rek(liczba_slow, tablica_slow));
+               schemat_Hornera_rek2(liczba_slow, liczba_slow, tablica_slow));
     } else {
         printf("Niepoprawna liczba parametrow!\n");
     }
