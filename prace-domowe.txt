@@ -1,18 +1,29 @@
-19-20 październik 2017
+Uprzejmie proszę o przygotowanie struktury katalogów zgodnej z poniższym spisem prac domowych w katalogu imie_nazwisko.
+Katalog należy spakować z użyciem zip i przesłać na mail g.borowik@wspol.edu.pl do dnia 11.02.2018.
+
+
+A. 19-20 październik 2017
+
 1. Notatka w MarkDown na GitHub opisująca wykonane ćwiczenia (środowisko pracy, linux - podstawowe polecenia, git, GitHub, gcc, pierwsze programy)
 2. Równanie kwadratowe - program w C
 
-23-24 listopad 2017
+
+B. 23-24 listopad 2017
+
 1. Co to jest typ dwójkowy, ósemkowy, szesnastkowy? Jak reprezentowane są te typy w języku C? - notatka w MarkDown na GitHub
 2. Konwersja 10 <-> 2 oraz 2<->16 - notatka w MarkDown na GitHub
 3. Formatowanie printf, scanf - notatka w MarkDown na GitHub
 4. Ciąg Fibonacciego - program w C
 
-21-22 grudzień 2017
+
+C. 21-22 grudzień 2017
+
 1. Kalkulator z wykorzystaniem 'switch-case' - program w C
 2. Największy wspólny dzielnik - program w C
 
-11-12 styczeń 2018
+
+D. 11-12 styczeń 2018
+
 1. Dlaczego dla preprocesingu w języku C używamy nadmiarowych nawiasów? - notatka w MarkDown na GitHub
 2. Refactoring '04 krotnosc-malych-liter'
 3. Rozbudować '04 krotnosc-malych-liter' o duże litery
@@ -20,7 +31,9 @@
 5. Sortowanie (bubble sort, insertion sort, selection sort) - różnice - krótka notatka w MarkDown na GitHub
 6. Sortowanie z wykorzystaniem funkcji 'max' - program w C
 
-25-26 styczeń 2018
+
+E. 25-26 styczeń 2018
+
 1. Największy wspólny dzielnik (Algorytm Euklidesa) - iteracyjnie - program w C (patrz grudzień pkt 2.)
 2. Największy wspólny dzielnik (Algorytm Euklidesa) - rekurencyjnie - program w C
 3. Ciąg Fibonacciego - rekurencyjnie - program w C
