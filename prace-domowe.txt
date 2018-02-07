@@ -6,7 +6,7 @@
 1. Co to jest typ dwójkowy, ósemkowy, szesnastkowy? Jak reprezentowane są te typy w języku C? - notatka w MarkDown na GitHub
 2. Konwersja 10 <-> 2 oraz 2<->16 - notatka w MarkDown na GitHub
 3. Formatowanie printf, scanf - notatka w MarkDown na GitHub
-4. Ciąg Fibonacciego - notatka w MarkDown na GitHub
+4. Ciąg Fibonacciego - program w C
 
 21-22 grudzień 2017
 1. Kalkulator z wykorzystaniem 'switch-case' - program w C
