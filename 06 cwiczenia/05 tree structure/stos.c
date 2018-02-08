@@ -38,7 +38,7 @@ struct Dane peek(struct Wezel *pTop){
     return pTop->dane;
 }
 
-int isEmpty(struct Wezel *top){
+bool isEmpty(struct Wezel *top){
     return !top;
 }
 

@@ -7,6 +7,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 #include "dane.h"
 
 struct Wezel{
@@ -20,7 +21,7 @@ struct Dane pop(struct Wezel **pTop);
 
 struct Dane peek(struct Wezel *pTop);
 
-int isEmpty(struct Wezel *top);
+bool isEmpty(struct Wezel *top);
 
 void print(struct Wezel *top);
 
