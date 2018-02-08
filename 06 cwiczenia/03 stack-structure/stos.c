@@ -62,6 +62,3 @@ void empty(struct Wezel **top){
 
 
 
-
-
-
