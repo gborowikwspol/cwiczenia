@@ -3,4 +3,8 @@
 
 #include "stos.h"
 
+#define N 12
+
+int policzWode(int* histogram);
+
 #endif //WODA_H
