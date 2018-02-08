@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdbool.h>
 #include "dane.h"
 
 void print_dane(struct Dane dane) {

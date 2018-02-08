@@ -19,9 +19,9 @@ struct Lisc *nowyLisc(struct Dane dane) {
 void add(struct Dane dane, struct Lisc **korzen) {
     if (*korzen) {
         if (relacja((*korzen)->dane, dane)) {
-            add(dane, (*korzen)->prawy);
+            add(dane, &(*korzen)->prawy);
         } else {
-            add(dane, (*korzen)->lewy);
+            add(dane, &(*korzen)->lewy);
         }
     } else {
         *korzen = nowyLisc(dane);
@@ -69,8 +69,9 @@ void flaten(struct Wezel **pWezel, struct Lisc *korzen) {
 }
 
 void drukujLiscNaPoziomie(int poziom, struct Lisc *lisc) {
-    for (int i = 1; i < poziom; ++i) { printf("      "); }
+    for (int i = 1; i < poziom; ++i) { printf("  "); }
     print_dane(lisc->dane);
+    printf("\n");
 }
 
 void drukujDrzewo(int poziom, struct Lisc *korzen) {
