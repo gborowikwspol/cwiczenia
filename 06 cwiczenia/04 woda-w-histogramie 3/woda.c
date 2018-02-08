@@ -52,5 +52,7 @@ int policzWode(int* histogram){
         woda += sprawdzPare(popr, nast, &stos, index);
     }
 
+    empty(&stos);
+
     return woda;
 }
