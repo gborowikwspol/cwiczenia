@@ -51,3 +51,17 @@ void print(struct Wezel *top){
     }
 }
 
+void empty(struct Wezel **top){
+    while(!isEmpty(*top)){
+        pop(top);
+    }
+}
+
+
+
+
+
+
+
+
+
