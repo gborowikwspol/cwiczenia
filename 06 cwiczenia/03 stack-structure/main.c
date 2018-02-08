@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "stos.h"
+#include "dane.h"
 
 int main() {
     struct Wezel *top = NULL; //wskaznik stosu
@@ -28,6 +29,8 @@ int main() {
 
     printf("(%d, %d) najmlodszy na stosie\n",
            peek(top).indeks, peek(top).wartosc);
+
+    print(top);
 
     return 0;
 }
