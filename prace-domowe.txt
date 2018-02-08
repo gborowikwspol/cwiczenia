@@ -25,12 +25,12 @@ C. 21-22 grudzień 2017
 
 D. 11-12 styczeń 2018
 
-1. Dlaczego dla preprocesingu w języku C używamy nadmiarowych nawiasów? - notatka w MarkDown na GitHub
+1. Dlaczego dla preprocesingu w języku C używamy nadmiarowych nawiasów? - krótka notatka w MarkDown na GitHub
 2. Refactoring '04 krotnosc-malych-liter'
 3. Rozbudować '04 krotnosc-malych-liter' o duże litery
 4. Rozwiniecie sin(x) w szereg Taylora - program w C
 5. Sortowanie (bubble sort, insertion sort, selection sort) - różnice - krótka notatka w MarkDown na GitHub
-6. Sortowanie z wykorzystaniem funkcji 'max' - program w C
+(opcjonalnie) 6. Sortowanie z wykorzystaniem funkcji 'max' - program w C
 
 
 E. 25-26 styczeń 2018
