@@ -3,7 +3,7 @@
 
 #include "stos.h"
 
-#define N 12
+#define N 9
 
 int policzWode(int* histogram);
 

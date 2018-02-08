@@ -21,8 +21,8 @@ void push(struct Wezel **pTop, struct Dane dane){
     wezel->popr = *pTop; // w nowym wezle wskaz top
     *pTop = wezel; // top wskazuje teraz na nowy wezel
 
-    printf("Para (%d, %d) odlozona na stosie\n",
-           dane.indeks, dane.wartosc);
+//    printf("Para (%d, %d) odlozona na stosie\n",
+//           dane.indeks, dane.wartosc);
 }
 
 struct Dane pop(struct Wezel **pTop){
