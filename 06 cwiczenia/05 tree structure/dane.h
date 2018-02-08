@@ -7,5 +7,6 @@ struct Dane{
 };
 
 void print_dane(struct Dane dane);
+bool relacja(struct Dane dane_l, struct Dane dane_p);
 
 #endif //DANE_H
