@@ -4,4 +4,4 @@ project(stack_structure)
 set(CMAKE_CXX_STANDARD 11)
 
 add_executable(stack_structure
-        main.c)
+        main.c stos.c stos.h)
