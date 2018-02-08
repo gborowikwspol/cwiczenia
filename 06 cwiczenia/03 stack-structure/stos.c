@@ -22,7 +22,7 @@ void push(struct Wezel **pTop, struct Dane dane){
     *pTop = wezel; // top wskazuje teraz na nowy wezel
 
     printf("Para (%d, %d) odlozona na stosie\n",
-           dane.indeks, dane.wartosc)
+           dane.indeks, dane.wartosc);
 }
 
 struct Dane pop(struct Wezel **pTop){
