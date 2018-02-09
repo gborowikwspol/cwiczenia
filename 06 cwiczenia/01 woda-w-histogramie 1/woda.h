@@ -3,7 +3,7 @@
 
 #define MAX(x, y) (((x) > (y)) ? (x) : (y))
 #define MIN(x, y) (((x) < (y)) ? (x) : (y))
-#define N 9
+#define N 30
 
 int policzWode(int *histogram);
 

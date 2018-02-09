@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-#define N 9
+#define N 30
 
 int policzWode(int *pInt);
 
 int main() {
-    int histogram[N] = {1, 2, 1, 1, 4, 2, 1, 3, 1};
+    int histogram[N] = {1, 2, 1, 1, 1, 1, 4, 2, 1, 1, 3, 1};
 
     printf("Maksymalny stan zgromadzonej wody wynosi %d.\n", policzWode(histogram));
 
