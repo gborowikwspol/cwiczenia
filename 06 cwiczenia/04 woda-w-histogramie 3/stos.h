@@ -20,10 +20,10 @@ struct Dane pop(struct Wezel **pTop);
 
 struct Dane peek(struct Wezel *pTop);
 
-int isEmpty(struct Wezel *top);
+int isEmpty(struct Wezel *pTop);
 
-void print(struct Wezel *top);
+void print(struct Wezel *pTop);
 
-void empty(struct Wezel **top);
+void empty(struct Wezel **pTop);
 
 #endif //STOS_H
