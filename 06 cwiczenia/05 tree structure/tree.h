@@ -14,7 +14,7 @@ struct Lisc {
 
 void add(struct Dane dane, struct Lisc **korzen);
 
-void usunDrzewo(struct Lisc *korzen);
+void usunDrzewo(struct Lisc **korzen);
 
 bool isTreeEmpty(struct Lisc *korzen);
 

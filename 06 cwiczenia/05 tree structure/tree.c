@@ -28,15 +28,21 @@ void add(struct Dane dane, struct Lisc **korzen) {
     }
 }
 
-void usunDrzewo(struct Lisc *korzen) {
-    if (!isTreeEmpty(korzen)) {
-        if (korzen->prawy != NULL) {
-            usunDrzewo(korzen->prawy);
-        }
-        if (korzen->lewy != NULL) {
-            usunDrzewo(korzen->lewy);
-        }
-        free(korzen);
+// prywatna
+void _usunDrzewo(struct Lisc *korzen) {
+    if (korzen->prawy != NULL) {
+        _usunDrzewo(korzen->prawy);
+    }
+    if (korzen->lewy != NULL) {
+        _usunDrzewo(korzen->lewy);
+    }
+    free(korzen);
+}
+
+void usunDrzewo(struct Lisc **korzen) {
+    if (!isTreeEmpty(*korzen)) {
+        _usunDrzewo(*korzen);
+        *korzen = NULL;
     }
 }
 

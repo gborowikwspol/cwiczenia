@@ -46,7 +46,7 @@ int main(){
     print(stos);
 
     empty(&stos);
-    usunDrzewo(drzewo);
+    usunDrzewo(&drzewo);
     free(tab);
 
     return 0;
