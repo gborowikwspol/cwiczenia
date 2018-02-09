@@ -25,7 +25,7 @@ int main() {
 
     para_ze_stosu = pop(&top);
     printf("(%d, %d) zdjety ze stosu\n",
-             para_ze_stosu.indeks, para_ze_stosu.wartosc);
+           para_ze_stosu.indeks, para_ze_stosu.wartosc);
 
     printf("(%d, %d) najmlodszy na stosie\n",
            peek(top).indeks, peek(top).wartosc);
