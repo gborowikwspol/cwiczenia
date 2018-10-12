@@ -9,7 +9,6 @@
 # ignoruj pliki tymczasowe idea
 .idea
 cmake-build-debug/
-CMakeLists.txt
 
 # inne
 *.save
