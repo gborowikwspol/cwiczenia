@@ -12,13 +12,17 @@ int main() {
     printf("Wybrano opcję %c : %31s", opcja, napis);
 
     printf("\n");
+
     printf("Podaj znak: ");
     scanf("%c", &znak);
+
     printf("Podaj ciąg znakowy: ");
     scanf("%s", ciag_znakow);
     // scanf("%s", &ciag_znakow[0]); // alternatywnie
+
     printf("Podaj liczbę całkowitą: ");
     scanf("%i", &wartosc_calkowita);
+
     printf("Podaj liczbę wymierną: ");
     scanf("%lf", &wartosc_wymierna);
 
