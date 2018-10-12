@@ -21,6 +21,9 @@ int main() {
 
 /* podczas kompilacji na Ubuntu dodajemy flagę  -lm która uruchomi #include <math.h>
 gcc nazwa.c -o nazwa.o -lm */
+
+/* w CLion w CMakeLists nalezy dodac wpis: target_link_libraries(nazwa_projektu m) */
+
     wyswietl_informacje();
 
     wczytaj_parametry_funkcji(&a, &b, &c);
