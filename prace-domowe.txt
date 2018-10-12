@@ -1,4 +1,4 @@
-Uprzejmie proszę o przygotowanie struktury katalogów zgodnej z poniższym spisem prac domowych w katalogu 'imie_nazwisko'.
+ Uprzejmie proszę o przygotowanie struktury katalogów zgodnej z poniższym spisem prac domowych w katalogu 'imie_nazwisko'.
 Katalog należy spakować z użyciem zip i przesłać na adres mailowy g.borowik@wspol.edu.pl do dnia 11.02.2018.
 Proszę o niewłączanie do zip plików wykonywalnych, ponieważ poczta odrzuci takie załączniki.
 
