@@ -16,8 +16,13 @@ int odejmij(int a, int b) {
 }
 
 int dziel(int a, int b) {
-    printf("Wynik dzielenia: %i i reszta: %i\n", a / b, a % b);
-    return a / b;
+    if (b != 0) {
+        printf("Wynik dzielenia: %i i reszta: %i\n", a / b, a % b);
+        return a / b;
+    } else {
+        printf("Dzielenie przez 0!\n");
+        return 0;
+    }
 }
 
 int czy_powtorzyc(int *czy_dalej) {
@@ -52,7 +57,6 @@ int licz(int a, int b, char wybor) {
         default:
             puts("Nie znam dzialania!");
             return 0;
-
     }
 
     return 1;
@@ -72,6 +76,7 @@ int main(void) {
 
         czy_dalej = czy_powtorzyc(&czy_dalej);
     }
+
     return 0;
 }
 
