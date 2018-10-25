@@ -16,8 +16,7 @@ int rozwiaz_rownanie_kwadratowe(double a, double b, double c, double *px1, doubl
 
     if (a == 0.0) {
         printf("Równanie liniowe.\n");
-        *px1 = -c / b
-                ;
+        *px1 = -c / b;
         return 3;
     }
 
@@ -55,7 +54,7 @@ void test3_rownanie_kwadratowe(int licznik) {
     if (x1 != -5.0 / 2.0) nd(licznik);
 
     if (rozwiaz_rownanie_kwadratowe(0.0, -52.3, 6.2, &x1, &x2) != 3) nd(licznik);
-    if (x1 != 6.2 / 52.3)nd(licznik);
+    if (x1 != 6.2 / 52.3) nd(licznik);
 }
 
 void run_test_pool() {
