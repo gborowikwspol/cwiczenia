@@ -1,45 +1,85 @@
-#include <math.h>
-#include "tests.h"
-#include "main.h"
+#include <stdio.h>
+#include <stdbool.h>
 
-double oblicz_pierwiastek1(double b, double delta, double a) {
-    return ((-b - sqrt(delta)) / (2 * a));
-}
+#define TEST
 
-double oblicz_pierwiastek2(double b, double delta, double a) {
-    return ((-b + sqrt(delta)) / (2 * a));
-}
-
-void oblicz_rownanie_kw(double a, double b, double c, double *x1, double *x2, int *rodzaj) {
-    *rodzaj = oblicz_rodzaj_rw_kw(a, b, c);
-
-    *x1 = oblicz_pierwiastek1(b, oblicz_delta(a, b, c), a);
-    *x2 = oblicz_pierwiastek2(b, oblicz_delta(a, b, c), a);
-}
-
-double oblicz_delta(double a, double b, double c) {
-    return b * b - 4 * a * c;
-}
-
-int oblicz_rodzaj_rw_kw(double a, double b, double c) {
-
-    double delta;
-
-    delta = oblicz_delta(a, b, c);
-
-    if (delta > 0.0) {
-        return 2;
-    } else if (delta < 0.0) {
-        return 0;
-    } else {
+int rozwiaz_rownanie_kwadratowe(double a, double b, double c, double *px1, double *px2) {
+    if (a == 0.0 && b == 0.0 && c == 0.0) {
+        printf("Równanie jest tautologią.\n");
         return 1;
     }
+
+    if (a == 0.0 && b == 0.0 && c != 0.0) {
+        printf("Równanie dla podanych parametrów jest sprzeczne.\n");
+        return 2;
+    }
+
+    if (a == 0.0) {
+        printf("Równanie liniowe.\n");
+        *px1 = -c / b
+                ;
+        return 3;
+    }
+
+    return 0;
 }
 
+#ifdef TEST
+
+void nd(int licznik) { printf("Test nr %i nie działa\n", licznik); }
+
+// tutaj należy umieszczać kolejne testy
+void test1_rownanie_kwadratowe(int licznik) {
+    double x1;
+    double x2;
+
+    //dla (0, 0, 0) - tautologia
+    if (rozwiaz_rownanie_kwadratowe(0.0, 0.0, 0.0, &x1, &x2) != 1) nd(licznik);
+}
+
+void test2_rownanie_kwadratowe(int licznik) {
+    double x1;
+    double x2;
+
+    //dla (0, 0, 5) - rozwiązanie nie istnieje - funkcja jest sprzeczna
+    if (rozwiaz_rownanie_kwadratowe(0.0, 0.0, 5.0, &x1, &x2) != 2) nd(licznik);
+    if (rozwiaz_rownanie_kwadratowe(0.0, 0.0, -3.4, &x1, &x2) != 2) nd(licznik);
+}
+
+void test3_rownanie_kwadratowe(int licznik) {
+    double x1;
+    double x2;
+
+    //dla (0, 2, 5) - równanie liniowe
+    if (rozwiaz_rownanie_kwadratowe(0.0, 2.0, 5.0, &x1, &x2) != 3) nd(licznik);
+    if (x1 != -5.0 / 2.0) nd(licznik);
+
+    if (rozwiaz_rownanie_kwadratowe(0.0, -52.3, 6.2, &x1, &x2) != 3) nd(licznik);
+    if (x1 != 6.2 / 52.3)nd(licznik);
+}
+
+void run_test_pool() {
+    int licznik = 0;
+// tutaj wywołujemy testy
+    test1_rownanie_kwadratowe(++licznik);
+    test2_rownanie_kwadratowe(++licznik);
+    test3_rownanie_kwadratowe(++licznik);
+}
+
+#endif
+
+
 int main() {
-    test_oblicz_rownanie_kwadratowe();
-    test_oblicz_rodzaj_rw_kw();
-    test_oblicz_delta();
-    test_oblicz_pierwiastek1();
-    test_oblicz_pierwiastek2();
+
+#ifndef TEST
+    // uruchom program
+
+
+#else
+    // uruchom testy
+    run_test_pool();
+
+#endif
+
+    return 0;
 }
