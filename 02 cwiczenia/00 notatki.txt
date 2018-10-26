@@ -1,0 +1,87 @@
+
+y = f(x)
+
+y = -x
+
+double f(double x){
+	double y;
+	y = -x;
+	return y;
+}
+
+
+//---------------------------
+
+y = f(a, b, c)
+
+y = a + b + c
+
+double	f(double a, double b, double c){
+	double y;
+	y =	a + b + c;
+	return y;
+}
+
+double	f(double a, double b, double c){
+	double result;
+	result =	a + b + c;
+	return result;
+}
+
+
+//---------------------------
+
+y = a + b
+
+
+double dodaj(double a, double b);
+
+int main()
+{
+	printf("wynikiem dodawania jest: %lf", dodaj(4, 5));
+	return 0;
+}
+
+
+double dodaj(double a, double b){
+	double wynik;
+	wynik = a + b;
+	return wynik;
+}
+
+
+//---------------------------
+
+
+void wyswietl_trzy_linie()
+
+void wyswietl_trzy_linie(void)
+{
+	printf("\n");
+	printf("\n");
+	printf("\n");
+}
+
+//---------------------------
+
+void wyswietl_napis(char* napis){
+	printf("%s", napis);
+}
+
+
+int main(){
+
+	char* napis = "Ala ma kota";
+
+	wyswietl_napis(napis);
+
+	return 0;
+}
+
+
+
+
+
+
+
+
