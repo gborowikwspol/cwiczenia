@@ -1,0 +1,18 @@
+
+
+A. 25-26 październik 2017
+
+1. Formatowanie printf, scanf
+
+
+B. 22-23 listopad 2017
+
+1. Dokończyć zadanie 02/14 rownanie-kwadratowe-tdd
+
+2. Co to jest typ dwójkowy, ósemkowy, szesnastkowy?
+a) Konwersja 10 <-> 2
+b) Konwersja 2 <-> 8 <-> 16
+
+3. Zapoznać się z:
+a) Algorytm NWD (największy wspólny dzielnik)
+b) Ciąg Fibonacciego 
